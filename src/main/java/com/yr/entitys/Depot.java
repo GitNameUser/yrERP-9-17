@@ -1,8 +1,4 @@
-package com.yr.entitys.bo;
-
-/**
- *仓库实体类
- */
+package com.yr.entitys;
 
 public class Depot {
     private int id;
