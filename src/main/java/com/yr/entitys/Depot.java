@@ -1,11 +1,17 @@
 package com.yr.entitys;
 
+import java.util.Date;
+
 public class Depot {
     private int id;
     private String code;
     private String name;
     private String addr;
     private String jobnum;//仓库负责人工号
+    private Date createTime;
+    private String createEmpno;
+    private Date updateTime;
+    private String updateEmpno;
 
     public int getId() {
         return id;
@@ -47,6 +53,38 @@ public class Depot {
         this.jobnum = jobnum;
     }
 
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getCreateEmpno() {
+        return createEmpno;
+    }
+
+    public void setCreateEmpno(String createEmpno) {
+        this.createEmpno = createEmpno;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getUpdateEmpno() {
+        return updateEmpno;
+    }
+
+    public void setUpdateEmpno(String updateEmpno) {
+        this.updateEmpno = updateEmpno;
+    }
+
     @Override
     public String toString() {
         return "Depot{" +
@@ -55,6 +93,11 @@ public class Depot {
                 ", name='" + name + '\'' +
                 ", addr='" + addr + '\'' +
                 ", jobnum='" + jobnum + '\'' +
+                ", createTime=" + createTime +
+                ", createEmpno='" + createEmpno + '\'' +
+                ", updateTime=" + updateTime +
+                ", updateEmpno='" + updateEmpno + '\'' +
                 '}';
     }
 }
+
