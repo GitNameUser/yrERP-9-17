@@ -1,4 +1,6 @@
-package com.yr.permission.entry;
+package com.yr.entitys.bo;
+
+import com.yr.entitys.Permissions;
 
 public class PermissionsBO {
     private Permissions permissions;
