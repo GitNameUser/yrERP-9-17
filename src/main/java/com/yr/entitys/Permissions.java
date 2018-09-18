@@ -1,4 +1,4 @@
-package com.yr.permission.entry;
+package com.yr.entitys;
 
 public class Permissions {
     private Integer id;

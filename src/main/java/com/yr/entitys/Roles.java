@@ -1,4 +1,4 @@
-package com.yr.role.entry;
+package com.yr.entitys;
 
 public class Roles {
     private Integer id;

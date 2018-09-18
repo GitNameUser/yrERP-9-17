@@ -1,18 +1,32 @@
 package com.yr.entitys;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import javax.annotation.Generated;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
-    private Integer id;
-    private String photo;
-    private String jobNum;
-    private String depaCode;
-    private String name;
-    private Integer sex;
-    private Date birthday;
-    private String phoneNumber;
-    private Integer states;
-    private String password;
+/**
+ * 用户类
+ */
+@Entity(name="u_user")
+public class User implements Serializable{
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer id;//编号
+    private String photo;//员工照片
+    private String jobNum;//工号
+    private String depaCode;//部门编号
+    private String name;//姓名
+    private Integer sex;//性别
+    //定义时间格式	自动更新时间
+    @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
+    private Date birthday;//生日
+    private String addr;//地址
+    private String phoneNumber;//联系电话
+    private Integer states;//状态
+    private String password;//密码
 
     public Integer getId() {
         return id;
@@ -92,6 +106,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getAddr() {
+        return addr;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
     }
 
     @Override

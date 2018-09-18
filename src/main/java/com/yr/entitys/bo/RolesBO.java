@@ -1,4 +1,6 @@
-package com.yr.role.entry;
+package com.yr.entitys.bo;
+
+import com.yr.entitys.Roles;
 
 public class RolesBO {
     private Roles roles;
