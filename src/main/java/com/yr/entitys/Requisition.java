@@ -20,7 +20,7 @@ public class Requisition {
 
     //采购商品名称
     @Column(name = "purc_ware_name")
-    private String purchaseGood;
+    private String purchasName;
 
     //采购商品类型
     @Column(name = "purc_ware_type")
@@ -73,8 +73,8 @@ public class Requisition {
         this.approver = approver;
     }
 
-    public void setPurchaseGood(String purchaseGood) {
-        this.purchaseGood = purchaseGood;
+    public void setPurchaseName(String purchasName) {
+        this.purchasName = purchasName;
     }
 
     public void setPurchaseType(String purchaseType) {
@@ -129,8 +129,8 @@ public class Requisition {
         return approver;
     }
 
-    public String getPurchaseGood() {
-        return purchaseGood;
+    public String getPurchaseName() {
+        return purchasName;
     }
 
     public String getPurchaseType() {
@@ -169,13 +169,13 @@ public class Requisition {
 
     }
 
-    public Requisition(Integer id, String code, String jobNumber, String departmentCode, String approver, String purchaseGood, String purchaseType, Long purchaseNumber, String supplierCode, Double unitPrice, Double totalPrice, Integer status, String consignee, String depotCode) {
+    public Requisition(Integer id, String code, String jobNumber, String departmentCode, String approver, String purchasName, String purchaseType, Long purchaseNumber, String supplierCode, Double unitPrice, Double totalPrice, Integer status, String consignee, String depotCode) {
         this.id = id;
         this.code = code;
         this.jobNumber = jobNumber;
         this.departmentCode = departmentCode;
         this.approver = approver;
-        this.purchaseGood = purchaseGood;
+        this.purchasName = purchasName;
         this.purchaseType = purchaseType;
         this.purchaseNumber = purchaseNumber;
         this.supplierCode = supplierCode;
@@ -194,7 +194,7 @@ public class Requisition {
                 ", jobNumber='" + jobNumber + '\'' +
                 ", departmentCode='" + departmentCode + '\'' +
                 ", approver='" + approver + '\'' +
-                ", purchaseGood='" + purchaseGood + '\'' +
+                ", purchaseName='" + purchasName + '\'' +
                 ", purchaseType='" + purchaseType + '\'' +
                 ", purchaseNumber=" + purchaseNumber +
                 ", supplierCode='" + supplierCode + '\'' +
